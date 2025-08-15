@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consejos de Fortnite | Guía Rápida</title>
+  <meta name="description" content="Guía rápida con consejos, ajustes y trucos para mejorar en Fortnite (capítulos modernos)." />
+  <style>
+    :root{
+      --bg: #0f172a; /* slate-900 */
+      --panel:#111827; /* gray-900 */
+      --muted:#94a3b8; /* slate-400 */
+      --text:#e5e7eb; /* gray-200 */
+      --accent:#22d3ee; /* cyan-400 */
+      --accent-2:#a78bfa; /* violet-400 */
+      --ok:#34d399; /* green-400 */
+      --warn:#f59e0b; /* amber-500 */
+      --danger:#f87171; /* red-400 */
+      --card:#0b1220; /* dark card */
+      --border: rgba(255,255,255,0.08);
+      --shadow: 0 10px 30px rgba(0,0,0,.45), 0 0 0 1px var(--border) inset;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(167,139,250,.15), transparent 60%),
+                  radial-gradient(800px 400px at 10% -10%, rgba(34,211,238,.15), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    header{
+      position:sticky;top:0;z-index:50;
+      background: linear-gradient(180deg, rgba(15,23,42,.9), rgba(15,23,42,.6));
+      backdrop-filter: blur(8px);
+      border-bottom:1px solid var(--border);
+    }
+    .container{max-width:1100px;margin:0 auto;padding:18px 20px}
+    .row{display:flex;gap:14px;align-items:center;justify-content:space-between}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:999px;border:1px solid transparent}
+    nav a:hover{color:var(--text);border-color:var(--border);background:rgba(255,255,255,.03)}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.3px}
+    .logo{width:32px;height:32px;display:grid;place-items:center;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:var(--shadow)}
+    .pill{font-size:12px;color:var(--bg);background:var(--accent);padding:4px 8px;border-radius:999px;font-weight:700;margin-left:6px}
+    .hero{padding:48px 20px 20px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:800px){.grid-3{grid-template-columns:repeat(3,1fr)}.grid-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:linear-gradient(180deg, rgba(17,24,39,.9), rgba(17,24,39,.6));border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+    h1{font-size:clamp(28px,4vw,44px);line-height:1.1;margin:0}
+    h2{font-size:clamp(20px,2.4vw,28px);margin:0 0 10px}
+    h3{font-size:18px;margin:10px 0}
+    p.lead{color:#cbd5e1;max-width:70ch}
+    .btn{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--border);background:#0b1220;padding:10px 14px;border-radius:12px;text-decoration:none;color:var(--text);cursor:pointer}
+    .btn:hover{border-color:rgba(255,255,255,.18)}
+    .badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:6px 8px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.02);color:#cbd5e1}
+    .tip-list{display:grid;gap:10px;margin:10px 0 0}
+    .tip{display:flex;gap:10px;align-items:flex-start;padding:10px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.02)}
+    .tip svg{flex:0 0 auto}
+    .kbd{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono";font-size:12px;padding:2px 6px;border-radius:6px;border:1px solid var(--border);background:#0a0f1a;color:#d1d5db}
+    .accordion{border:1px solid var(--border);border-radius:14px;overflow:hidden}
+    details{background:rgba(255,255,255,.02)}
+    details+details{border-top:1px solid var(--border)}
+    summary{cursor:pointer;padding:14px 16px;list-style:none;font-weight:700}
+    summary::-webkit-details-marker{display:none}
+    .settings{display:grid;gap:10px}
+    .settings label{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px;border:1px solid var(--border);border-radius:10px;background:#0a0f1a}
+    .footer{opacity:.8;font-size:12px;padding:24px 20px;text-align:center;color:#9ca3af}
+    .inline-icon{width:18px;height:18px;vertical-align:-3px}
+    .split{display:grid;gap:16px}
+    @media(min-width:900px){.split{grid-template-columns:1.4fr .9fr}}
+    .checklist li{margin:8px 0}
+    .muted{color:var(--muted)}
+    .tip-counter{font-size:12px;color:#94a3b8}
+    .search{display:flex;gap:10px}
+    .search input{flex:1; padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:#0a0f1a;color:var(--text)}
+    .search small{color:#94a3b8}
+    .hidden{display:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container row">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">🎮</div>
+        <div>Consejos Fortnite <span class="pill">Guía</span></div>
+      </div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#ajustes">Ajustes</a>
+        <a href="#mecanicas">Mecánicas</a>
+        <a href="#estrategia">Estrategia</a>
+        <a href="#recursos">Recursos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio" class="container">
+    <section class="hero split">
+      <div>
+        <h1>Subí de nivel en Fortnite con tips claros y probados</h1>
+        <p class="lead">Una página rápida para mejorar mira, construcción/edición, rotaciones y decisiones. Todo en español y al grano.
+        </p>
+        <div class="search" style="margin-top:12px">
+          <input id="search" placeholder="Buscá: aim, construcción, teclas…" />
+          <button class="btn" id="randomTipBtn">Tip aleatorio</button>
+        </div>
+        <small class="muted">Sugerencia: escribí una palabra para filtrar tarjetas por tema.</small>
+      </div>
+      <aside>
+        <div class="card">
+          <div class="badge" title="Consejo express">⚡ Tip rápido</div>
+          <h3>Regla 80/20</h3>
+          <p>El 20% de hábitos te da 80% de resultados: <strong>sensibilidad correcta</strong>, <strong>builds básicos</strong>, <strong>rotar con tiempo</strong> y <strong>pelear con cobertura</strong>.</p>
+          <ul class="checklist">
+            <li>Box fight con cono en techo.</li>
+            <li>Edit single tile + reset rápido.</li>
+            <li>Strafe + crouch para romper timing.</li>
+            <li>Siempre una salida (rampa o pared lista).</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section id="ajustes" class="grid grid-2">
+      <article class="card">
+        <h2>💻 Ajustes de PC/Consola</h2>
+        <div class="settings">
+          <label>Modo de pantalla <span><code class="kbd">Pantalla completa</code></span></label>
+          <label>FPS estables <span><code class="kbd">sincronía off</code> • <code class="kbd">límite cercano al máximo estable</code></span></label>
+          <label>Resolución 3D <span><code class="kbd">100%</code> (bajá si necesitás FPS)</span></label>
+          <label>Gráficos <span><code class="kbd">Bajos/Medios</code> para competitivo • sombras <code class="kbd">off</code></span></label>
+          <label>Sonido 3D <span><code class="kbd">Activado</code> + <code class="kbd">Visualizar efectos</code></span></label>
+          <label>Latencia <span>Usá cable y región correcta (ping &lt; 40ms ideal)</span></label>
+        </div>
+        <p class="muted">Consejo: priorizá claridad visual y FPS sobre gráficos bonitos.</p>
+      </article>
+      <article class="card">
+        <h2>🎯 Sensibilidad & puntería</h2>
+        <p>Elegí una sensi que te permita <strong>seguir targets</strong> y <strong>microajustes</strong>. Si fallás flicks, bajala un poco.</p>
+        <ul class="tip-list">
+          <li class="tip"><svg class="inline-icon" viewBox="0 0 24 24" fill="none"><path d="M12 2v20m10-10H2" stroke="currentColor" stroke-width="2"/></svg> Practicá 5–10 min diarios en mapa de aim (tracking + microflicks).</li>
+          <li class="tip">Para mando, ajustá <span class="kbd">Zona Muerta</span> lo más baja posible sin drift.</li>
+          <li class="tip">Desactivá aceleración de mouse del SO.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="mecanicas" class="grid grid-3" style="margin-top:14px">
+      <article class="card topic" data-tags="construccion edicion box pelea 1x1">
+        <h2>🏗️ Construcción básica que gana</h2>
+        <ul class="tip-list">
+          <li class="tip">Ramp + pared al pushear para cubrir ángulos.</li>
+          <li class="tip">Si te rushean, <strong>box</strong> 1x1 con cono adentro y <em>pre-edit</em> listo.</li>
+          <li class="tip">Cuando edites, <strong>reseteá</strong> de inmediato si no ves tiro claro.</li>
+          <li class="tip">No sobreedites: menos show, más daño seguro.</li>
+        </ul>
+      </article>
+      <article class="card topic" data-tags="movimiento posicion rotaciones storm zona">
+        <h2>🧭 Rotaciones & posición</h2>
+        <ul class="tip-list">
+          <li class="tip">Salí del drop con materiales, curas y movilidad antes del 1er cierre.</li>
+          <li class="tip">Jugá bordes de zona para menos peleas, entra <em>con tiempo</em>.</li>
+          <li class="tip">Usá altura natural y cobertura (rocas, construcciones).</li>
+          <li class="tip">En lates, priorizá <strong>sobrevivir</strong> a buscar kills difíciles.</li>
+        </ul>
+      </article>
+      <article class="card topic" data-tags="combate aim escopeta smg peek picks">
+        <h2>🔫 Combate inteligente</h2>
+        <ul class="tip-list">
+          <li class="tip">Hacé <strong>right-hand peek</strong> (asomarte por la derecha) para ventaja.</li>
+          <li class="tip">Disparo de escopeta + pared al instante para cubrir trade.</li>
+          <li class="tip">No forces ángulos: cambia altura o abre otro lado.</li>
+          <li class="tip">Aprendé el <em>timing</em> del arma actual (cadencia/recarga).</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="estrategia" class="split" style="margin-top:14px">
+      <article class="card">
+        <h2>🧠 Plan simple para partidas públicas</h2>
+        <ol class="checklist">
+          <li><strong>Drop seguro:</strong> POI secundario con cofres y rutas de material.</li>
+          <li><strong>Power spike:</strong> buscá tu arma fuerte + 2 curas.</li>
+          <li><strong>Mid game:</strong> tomá peleas 50/50 <em>solo</em> si tenés ventaja de vida/posición.</li>
+          <li><strong>Final:</strong> priorizá altura o <em>layer</em> limpio, expandí con rampa y pared.</li>
+        </ol>
+        <p class="muted">Si jugás dúo/escuadrón: comunicá <em>focus</em>, ángulos cruzados y recursos.</p>
+      </article>
+      <aside class="card">
+        <h2>⌨️ Teclas recomendadas (PC)</h2>
+        <p class="muted">Adaptalas a tus manos. La idea es <strong>todo al alcance</strong> sin mover la mano.</p>
+        <ul class="tip-list">
+          <li class="tip">Pared: <span class="kbd">Q</span> • Piso: <span class="kbd">F</span> • Rampa: <span class="kbd">E</span> • Cono: <span class="kbd">C</span></li>
+          <li class="tip">Editar: <span class="kbd">R</span> o rueda; Confirmar: <span class="kbd">Rueda</span>; Reset: <span class="kbd">Rueda</span></li>
+          <li class="tip">Agacharse: <span class="kbd">Ctrl</span> • Sprint: <span class="kbd">Shift</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="recursos" class="grid grid-2" style="margin-top:14px">
+      <article class="card">
+        <h2>🧪 Rutina de práctica (15–25 min)</h2>
+        <ul class="tip-list">
+          <li class="tip">5 min <strong>tracking</strong> + microajuste (mapa de aim).</li>
+          <li class="tip">5 min <strong>edits</strong>: ventana, triángulo, dorso, reset.</li>
+          <li class="tip">5–10 min <strong>box fights</strong> vs bots/creativo.</li>
+          <li class="tip">2 partidas públicas aplicando 1 objetivo específico.</li>
+        </ul>
+        <p class="tip-counter"><span id="tipCount">—</span> tips visibles</p>
+      </article>
+      <article class="card">
+        <h2>📜 Recordatorios pro</h2>
+        <div class="accordion">
+          <details open>
+            <summary>Tu vida vale más que una kill</summary>
+            <div style="padding:0 16px 14px" class="muted">Si podés <em>disengage</em> y curarte, hacelo. Ganás más MMR y consistencia.</div>
+          </details>
+          <details>
+            <summary>Controlá la economía de materiales</summary>
+            <div style="padding:0 16px 14px" class="muted">Tené un umbral mínimo para pelear (ej.: 300 mats). Si estás por debajo, farmeá o evitá.</div>
+          </details>
+          <details>
+            <summary>Jugar limpio & fair play</summary>
+            <div style="padding:0 16px 14px" class="muted">Respetá a otros jugadores. Reportá cheats; no uses software no permitido.</div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid grid-3" style="margin-top:14px">
+      <article class="card topic" data-tags="mando controller aim asistencia deadzone">
+        <h2>🎮 Tips para mando</h2>
+        <ul class="tip-list">
+          <li class="tip">Aprovechá la asistencia moviéndote <em>suave</em> al entrar al tiro.</li>
+          <li class="tip">Zona muerta baja; prueba de drift en lobby.</li>
+          <li class="tip">Sensibilidad constru/edición un poco más alta que mira.</li>
+        </ul>
+      </article>
+      <article class="card topic" data-tags="mouse teclado keybinds ergonomia salud">
+        <h2>🖱️ Mouse & teclado</h2>
+        <ul class="tip-list">
+          <li class="tip">Altura de DPI 800–1600, sensi en juego moderada.</li>
+          <li class="tip">Alfombrilla grande, brazo relajado, hombros bajos.</li>
+          <li class="tip">Descansos cortos: regla 50/10 (50 min juego, 10 min pausa).</li>
+        </ul>
+      </article>
+      <article class="card topic" data-tags="mentality tilt mentalidad focus disciplina">
+        <h2>🧘 Mentalidad</h2>
+        <ul class="tip-list">
+          <li class="tip">Objetivo por partida (1 cosa) & revisión rápida al terminar.</li>
+          <li class="tip">Si tilt, pausa 10–15 min. Volvé fresco.</li>
+          <li class="tip">Dormí bien y tomá agua. La diferencia se nota.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:14px">
+      <h2>❓ Preguntas rápidas</h2>
+      <div class="accordion">
+        <details>
+          <summary>¿Cuál es la mejor zona de caída?</summary>
+          <div style="padding:0 16px 14px" class="muted">Elegí un POI menos concurrido donde conozcas cofres, rutas de mats y rotaciones. <em>La constancia gana</em>.</div>
+        </details>
+        <details>
+          <summary>¿Me conviene alta sensibilidad?</summary>
+          <div style="padding:0 16px 14px" class="muted">Solo si controlás microajustes. Empezá medio-baja y subí apenas cuando te quede corta.</div>
+        </details>
+        <details>
+          <summary>¿Cómo dejo de perder 50/50s?</summary>
+          <div style="padding:0 16px 14px" class="muted">Evitá intercambios frontales. Tomá ángulos, <em>right peek</em>, y disparo + pared.
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <footer class="footer">
+      Hecho con ❤️ para jugadores que quieren mejorar. Actualizá esta página con tus propios atajos y rutinas.
+    </footer>
+  </main>
+
+  <script>
+    // Filtro por búsqueda
+    const search = document.getElementById('search');
+    const topics = document.querySelectorAll('.topic, .tip, .card');
+    const tipCount = document.getElementById('tipCount');
+    function applyFilter(){
+      const q = (search.value || '').toLowerCase().trim();
+      let visible = 0;
+      document.querySelectorAll('.topic').forEach(el=>{
+        const tags = (el.dataset.tags||'').toLowerCase();
+        const text = el.innerText.toLowerCase();
+        const show = !q || tags.includes(q) || text.includes(q);
+        el.classList.toggle('hidden', !show);
+        if(show) visible++;
+      });
+      tipCount.textContent = visible ? visible + ' bloques visibles' : 'Ninguno';
+    }
+    search.addEventListener('input', applyFilter);
+    applyFilter();
+
+    // Tip aleatorio
+    const tips = Array.from(document.querySelectorAll('.tip')).map(el=>el.innerText.trim()).filter(Boolean);
+    document.getElementById('randomTipBtn').addEventListener('click', ()=>{
+      if(!tips.length) return;
+      const pick = tips[Math.floor(Math.random()*tips.length)];
+      alert('💡 ' + pick);
+    });
+
+    // (Opcional) Persistencia de búsqueda en localStorage
+    const KEY='ftn.search';
+    search.value = localStorage.getItem(KEY)||''; applyFilter();
+    search.addEventListener('change',()=>localStorage.setItem(KEY, search.value));
+  </script>
+</body>
+</html>
